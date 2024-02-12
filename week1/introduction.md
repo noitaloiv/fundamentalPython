@@ -50,9 +50,10 @@ Vi väljer därför att arbeta i ett program som är framtaget just för att skr
 1. Öppna Visual Studio Code på din dator.
 2. Navigera till tilläggsmenyn (Extensions) genom `View -> Extensions` (se Figur 1)
 
-
+![Extensions in VSCode](../assets/images/Extensions_VSCode.png)
 
 Visual Studio Code Extensions-vyn listar installerade tillägg och rekommenderade tillägg, baserat på populäritet, på VS Marketplace.
+
 3. Filtrera listan över tillgängliga tillägg genom att ange "python" i sökrutan högst upp i tilläggsvyn.
 4. Välj Python-tillägget publicerat av Microsoft (beskrivs som IntelliSense (Pylance) och listas vanligtvis först i listan). Detaljerna om tillägget visas i en flikpanel till höger när du klickar på det.
 5. Välj "Installera" i panelen Extensions.
