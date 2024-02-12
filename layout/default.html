@@ -10,10 +10,14 @@
     <header>
         <h1><a href="/">Your Course Name</a></h1>
         <nav>
-            <ul>
-                <li><a href="/week1/">Week 1</a></li>
+            <div class="navbar">
+                <a href="/week1/">Week 1</a>
+                <a href="/week2/">Week 2</a>
                 <!-- Add more weeks as needed -->
-            </ul>
+                <a href="javascript:void(0);" class="icon" onclick="navbarToggle()">
+                    <i class="fa fa-bars"></i> <!-- Using Font Awesome for the menu icon -->
+                </a>
+            </div>
         </nav>
     </header>
 
@@ -24,5 +28,16 @@
     <footer>
         <p>&copy; 2024 Your Name. All rights reserved.</p>
     </footer>
+
+    <script>
+        function navbarToggle() {
+            var x = document.getElementsByClassName("navbar")[0];
+            if (x.className === "navbar") {
+                x.className += " responsive";
+            } else {
+                x.className = "navbar";
+            }
+        }
+    </script>
 </body>
 </html>
