@@ -53,9 +53,10 @@ header h1, footer p {
 
 main {
     background-color: #fff;
-    padding: 20px;
+    padding: 20px 40px; /* Increased right and left padding */
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: 20px; /* Add some margin to separate from header/footer */
 }
 
 footer {
