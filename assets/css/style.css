@@ -63,3 +63,44 @@ footer {
     text-align: center;
     font-size: 0.8em;
 }
+
+/* Navbar base styles */
+#navbar {
+    background-color: #f8f8f8; /* Light grey background */
+    border-bottom: 1px solid #e7e7e7; /* Bottom border for a slight shadow effect */
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#navbar li {
+    float: left; /* Align links to the left */
+}
+
+#navbar li a {
+    display: block;
+    color: #333; /* Dark text color for contrast */
+    text-align: center;
+    padding: 14px 16px; /* Vertical and horizontal padding */
+    text-decoration: none;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+#navbar li a:hover {
+    background-color: #ddd; /* Light grey background on hover */
+}
+
+/* Responsive styling */
+@media screen and (max-width: 600px) {
+    #navbar li {
+        float: none; /* Stack links vertically on small screens */
+    }
+    #navbar li a {
+        text-align: left; /* Align text to the left on small screens */
+    }
+}
+
