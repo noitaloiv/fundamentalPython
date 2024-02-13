@@ -166,3 +166,20 @@ main {
     width: 20px; /* Ensure icons have a consistent width */
     text-align: center; /* Center the icon if it's narrower than the width */
 }
+
+/* Make images responsive */
+img {
+    max-width: 100%; /* Ensures images are never wider than their container */
+    height: auto; /* Maintains the aspect ratio */
+    display: block; /* Removes bottom space associated with inline elements */
+    margin: 0 auto; /* Centers images */
+}
+
+/* Class for styled images */
+.styled-image {
+    border: 1px solid #ddd; /* Light grey border */
+    border-radius: 4px; /* Slight rounding of corners */
+    padding: 5px; /* Space between the border and the image */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    margin-bottom: 20px; /* Space below the image */
+}
