@@ -153,4 +153,16 @@ main {
     }
 }
 
+#sidebar nav ul li a {
+    display: flex;
+    align-items: center; /* Align icons and text vertically */
+    padding: 10px;
+    text-decoration: none;
+    color: #333;
+}
 
+#sidebar nav ul li a i {
+    margin-right: 10px; /* Space between icon and text */
+    width: 20px; /* Ensure icons have a consistent width */
+    text-align: center; /* Center the icon if it's narrower than the width */
+}
