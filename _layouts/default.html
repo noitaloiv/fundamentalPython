@@ -8,25 +8,25 @@
 </head>
 <body>
     <header>
-        <nav>
-            <div id="navbar">
+        <div class="container">
+            <aside id="sidebar">
+            <nav>
                 <ul>
                     <li><a href="/">Home</a></li>
                     <li><a href="/week1/">Week 1</a></li>
                     <li><a href="/week2/">Week 2</a></li>
                     <!-- Add more links as needed -->
                 </ul>
-            </div>
-        </nav>
-    </header>
+            </nav>
+            </aside>
 
-    <main>
-        {{ content }}
-    </main>
-
-    <footer>
-        ...
-    </footer>
+            <main>
+                {{ content }}
+            </main>
+            <footer>
+                ...
+            </footer>
+        </div>
     <script>
         function navbarToggle() {
             var x = document.getElementsByClassName("navbar")[0];
