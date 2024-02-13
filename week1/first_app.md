@@ -38,7 +38,7 @@ Genom att använda filtillägget .py berättar du för VS Code att det ska tolka
 `print('Hello, World!')`
 
 * Spara filen genom att välja File och Save (eller Ctrl+S/⌘ + S).
-![Extensions in VSCode](../assets/images/saveFileVSCode.png)
+![Extensions in VSCode](../assets/images/saveFileVSCode.png){: .styled-image }
 
 <div style="padding: 0.5em; background-color: #f9f9f9; border-left: 4px solid #0078D4; margin-bottom: 1em;">
     <strong>Note:</strong> OBS! Det är viktigt att alltid spara ändringar i sin kod innan man kör koden. Du kan identifiera huruvida du har osparade ändringar i en fil genom den vita prick som som blir synlig när ändringar sker i fil-fliken.
@@ -47,12 +47,12 @@ Genom att använda filtillägget .py berättar du för VS Code att det ska tolka
 ## Steg 3 - Kör ditt första program
 
 Du kan nu köra din applikation inifrån VS Code. Du gör detta genom att öppna den inbyggda terminalen i VS Code (View -> Terminal).
-![Extensions in VSCode](../assets/images/openTerminalVsCode.png)
+![Extensions in VSCode](../assets/images/openTerminalVsCode.png){: .styled-image }
 
 I terminalfönstret så skriver du sedan följande kommando, följt av enter, för att köra Python-koden:
 python3 hello.py
 
 Vilket, för denna applikation, ger oss följande resultat:
-![Extensions in VSCode](../assets/images/pythonRan.png)
+![Extensions in VSCode](../assets/images/pythonRan.png){: .styled-image }
 
 Du har nu skapat din första Python-applikation och kört applikationen för att generera en output! För att förstå hur vi kan skriva mer avancera applikationer, exempelvis ett mindre spel, så behöver vi först förstå de olika beståndsdelarna som vi kan arbeta med i Python.
