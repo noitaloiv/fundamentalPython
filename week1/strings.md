@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Week 1: Introduction to Python"
+---
+
 # Operationer på strängar
 Du kan generellt sett inte utföra matematiska operationer på strängar, även i de fall strängarna ser ut som siffror (t.ex. `"15"`). Detta innefattar att nedan uttryck inte är giltiga:
 ```python
