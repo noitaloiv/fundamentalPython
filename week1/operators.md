@@ -2,6 +2,7 @@
 Operatorer är speciella symboler som fungerar likt de nyckelord vi tidigare pratat om - d.v.s. att de representerar viss inbyggd funktionalitet, exempelvis `+` för addition och `*` för multiplikation. De värden som operatören använder kallas för "operander", exempelvis skulle `4` resp. `5` i uttrycket `4 + 5` agera _operander_ för _operationen_ addition.
 
 ## Matematiska uttryck
+
 Samtliga utav nedan matematiska uttryck är giltiga: 
 ```python
 # Exempel 1
@@ -18,8 +19,11 @@ Varje symbol representerar en operation. `+`-operationen avser addition, `-`-ope
 ### Utförandeordning av operationer
 Även parenteser utvärderas enligt matematikens lagar, d.v.s. att värdet från det sista uttrycket ovan skulle bli 30 (15 * 2). Akronymen _PEMDAS_ kan vara behjälplig i att komma ihåg ordningen för dessa regler:
 * Parenteser har högst prioritet och kan användas för att tvinga ett uttryck att utvärderas i den ordning du vill. Eftersom uttryck inom parentes utvärderas först, ger `2 * (3-1)` resultatet `4`, och `(1+1)**(5-2)` ger resultatet `8`. Du kan också använda parenteser för att göra ett uttryck enklare att läsa, som i `( minut * 100) / 60` - trots att detta inte har någon inverkan på resultatet.
+  
 * Exponentiering har näst högsta prioritet, så `2**1+1` är `3`, inte `4` och `3*1**3` är `3`, inte `27`.
+  
 * Multiplikation och division har samma företräde, vilket är högre än addition och subtraktion, som också har samma företräde. Så `2*3-1` är `5`, inte `4` och `6+4/2` är `8`, inte `5`.
+  
 * Operatörer med samma prioritet utvärderas från vänster till höger (förutom exponentiering). Så i uttrycket `grader / 2 * pi` sker divisionen först och resultatet multipliceras sedan med pi. För att dividera med `2π` kan du använda parenteser eller skriva `grader / 2 / pi`.
 
 I det fall vi har lagrat ett värde i en variabel så kommer varibeln att ersättas med dess värde innan operationen utförs. Detta sker automatiskt när koden körs av kompilatorn. 
