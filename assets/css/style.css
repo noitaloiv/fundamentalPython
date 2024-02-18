@@ -25,6 +25,14 @@ body[data-theme='light'] .dropdown-content {
   color: #000000;
 }
 
+body[data-theme='light'] #theme-toggle {
+  background-color:white;
+}
+
+body[data-theme='light'] #theme-toggle {
+  background-color:#121212;
+}
+
 /* Dark mode menu */
 body[data-theme='dark'] .dropdown-content {
   background: #121212;
@@ -62,8 +70,17 @@ a {
   color: #000000; /* Same as other text */
 }
 
-li, .dropdown, .dropdown-content span {
+.dropdown, .dropdown-content span {
   display: flex;
+}
+
+.displayFlexLinks {
+  display: flex;
+}
+
+nav span {
+  display: grid;
+  align-content: center;
 }
 
 pre {
@@ -76,8 +93,6 @@ pre {
 
 /* Theme Toggle Button */
 #theme-toggle {
-  position: relative;
-  transform: translate(25%, 10%);
   cursor: pointer;
   border: none;
   padding: 10px 20px;
@@ -143,6 +158,7 @@ i {
 
 main {
     padding: 20px 40px; /* Increased right and left padding */
+    min-width: 30vw;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
     margin: 20px; /* Add some margin to separate from header/footer */
