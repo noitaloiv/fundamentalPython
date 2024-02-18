@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Week 1: Introduction to Python"
+---
+
 # Syntax
 Nu när du har skapat samt ställt in din arbetsyta och skrivit ditt första program i Python är det dags att fördjupa dig i Python-syntaxens värld. Man kan likna en syntax med hur grammatiken fungerar i det svenska språket där man skriver på ett visst sätt för att andra ska förstå vad du menar.
 
