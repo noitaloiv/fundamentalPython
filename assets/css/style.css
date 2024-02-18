@@ -29,7 +29,7 @@ body[data-theme='light'] #theme-toggle {
   background-color:white;
 }
 
-body[data-theme='light'] #theme-toggle {
+body[data-theme='dark'] #theme-toggle {
   background-color:#121212;
 }
 
