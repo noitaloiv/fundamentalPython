@@ -27,6 +27,11 @@ body {
     --font-size--small--2: 81.25%;
     --font-size--small--3: 75%;
     --font-size--small--4: 62.5%;
+    --code-font-size: var(--font-size--small--2);
+}
+
+pre {
+  line-height: 1.5;
 }
 
 header, main, footer {
