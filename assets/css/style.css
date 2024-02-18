@@ -62,7 +62,7 @@ a {
   color: #000000; /* Same as other text */
 }
 
-.dropdown-content span {
+li, .dropdown, .dropdown-content span {
   display: flex;
 }
 
@@ -77,9 +77,8 @@ pre {
 /* Theme Toggle Button */
 #theme-toggle {
   position: relative;
-  transform: translate(-50%, -50%);
+  transform: translate(25%, 10%);
   cursor: pointer;
-  background-color: #f0f0f0;
   border: none;
   padding: 10px 20px;
   border-radius: 20px;
@@ -201,6 +200,7 @@ footer {
 /* Sidebar styles */
 #sidebar {
     width: 300px;
+    min-width: 15vw;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
     margin: 20px;
@@ -235,12 +235,6 @@ main {
     #sidebar {
         width: 100%; /* Full width sidebar on smaller screens */
         box-shadow: none; /* Remove shadow on smaller screens */
-    }
-    .sidemenu {
-      width: 100px; /* Smaller width with icons only */
-    }
-    .sidemenu label {
-      display: none; /* Hide text labels */
     }
 }
 
