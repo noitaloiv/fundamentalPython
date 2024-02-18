@@ -62,11 +62,11 @@ a {
   color: #000000; /* Same as other text */
 }
 
-.dropdown-menu span {
+.dropdown-content span {
   display: flex;
 }
 
-pre, code {
+pre {
   line-height: 1.5;
   background-color: #282a36; /* Dark background for code blocks */
   color: #f8f8f2; /* Light text for code */
@@ -76,9 +76,7 @@ pre, code {
 
 /* Theme Toggle Button */
 #theme-toggle {
-  position: fixed;
-  top: 50%;
-  left: 50%;
+  position: relative;
   transform: translate(-50%, -50%);
   cursor: pointer;
   background-color: #f0f0f0;
