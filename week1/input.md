@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Week 1: Introduction to Python"
+---
+
 # Input och output i Python 
 Vi har hittills arbetat med olika variabeltyper och operatorer där vi använt oss av funktionen `print()` för att generera en _output_, d.v.s. ett utfall av den kompilerade koden som en användare kan se. Det kan dock tänkas vara relevant att tillåta en användare att skicka in värden som programmet sedan kan använda sig utav, s.k. _inputs_.
 
