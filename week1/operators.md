@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Week 1: Introduction to Python"
+---
+
 # Operatorer och operander 
 Operatorer är speciella symboler som fungerar likt de nyckelord vi tidigare pratat om - d.v.s. att de representerar viss inbyggd funktionalitet, exempelvis `+` för addition och `*` för multiplikation. De värden som operatören använder kallas för "operander", exempelvis skulle `4` resp. `5` i uttrycket `4 + 5` agera _operander_ för _operationen_ addition.
 
