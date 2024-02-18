@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Week 2: Selection and iteration"
+---
+
 # Selektion
 I Python är `if`-satsen en så kallad _villkorssats_. Med detta menas att vi placerar ett villkor på en eller flera rader kod och deklarerar att denna kod enbart ska kompileras OM ett specifikt villkor uppfylls.
 
