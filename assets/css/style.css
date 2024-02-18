@@ -1,3 +1,10 @@
+/* General Resets */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 :root {
   /* Light theme colors */
   --background-color: #ffffff;
@@ -9,8 +16,19 @@
   /* Dark theme colors */
   --background-color: #121212;
   --text-color: #ffffff;
-  
   /* ... other dark theme colors */
+}
+
+/* Light mode menu */
+body[data-theme='light'] .dropdown-content {
+  background: #ffffff;
+  color: #000000;
+}
+
+/* Dark mode menu */
+body[data-theme='dark'] .dropdown-content {
+  background: #121212;
+  color: #ffffff;
 }
 
 /* Light mode icon */
@@ -30,7 +48,7 @@ body {
     line-height: 1.5;
     margin: 0;
     padding: 0;
-    --font-stack: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+    --font-stack: -apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji";
     --font-stack--monospace: "SFMono-Regular",Menlo,Consolas,Monaco,Liberation Mono,Lucida Console,monospace;
     --font-size--normal: 100%;
     --font-size--small: 87.5%;
@@ -40,19 +58,33 @@ body {
     --code-font-size: var(--font-size--small--2);
 }
 
-pre {
-  line-height: 1.5;
-  padding: 20px;
-  background-color: #FFF; /* Darker background for dark mode */
-  color: #000;
+a {
+  color: #000000; /* Same as other text */
 }
 
-button {
-  border:none;
-}
-
-span {
+.dropdown-menu span {
   display: flex;
+}
+
+pre, code {
+  line-height: 1.5;
+  background-color: #282a36; /* Dark background for code blocks */
+  color: #f8f8f2; /* Light text for code */
+  border-radius: 5px;
+  padding: 1em;
+}
+
+/* Theme Toggle Button */
+#theme-toggle {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -174,7 +206,7 @@ footer {
 
 /* Sidebar styles */
 #sidebar {
-    width: 240px; /* Fixed sidebar width */
+    width: 300px;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
     margin: 20px;
@@ -206,10 +238,15 @@ main {
     .container {
         flex-direction: column; /* Stack sidebar and content on smaller screens */
     }
-
     #sidebar {
         width: 100%; /* Full width sidebar on smaller screens */
         box-shadow: none; /* Remove shadow on smaller screens */
+    }
+    .sidemenu {
+      width: 100px; /* Smaller width with icons only */
+    }
+    .sidemenu label {
+      display: none; /* Hide text labels */
     }
 }
 
@@ -255,6 +292,7 @@ img {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    opacity: 1;
 }
 
 /* Show the dropdown menu on hover */
