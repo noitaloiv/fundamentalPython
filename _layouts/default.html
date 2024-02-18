@@ -15,7 +15,7 @@
             <aside id="sidebar">
                 <nav>
                     <span>
-                        <button id="theme-toggle"><i class="fa-solid fa-moon"></i></button>
+                        <button id="theme-toggle"><span id="theme-icon" class="fas fa-moon"></span></button>
                     </span>
                     <ul>
                         <li>
@@ -84,15 +84,28 @@
             </footer>
         </div>
     <script>
+        document.addEventListener('DOMContentLoaded', () => {
           const themeToggle = document.getElementById('theme-toggle');
-          const currentTheme = localStorage.getItem('theme') || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-          document.documentElement.setAttribute('data-theme', currentTheme);
+          const themeIcon = document.getElementById('theme-icon');
+          let currentTheme = localStorage.getItem('theme') || 'light';
         
-          themeToggle.addEventListener('click', () => {
-            const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
-            document.documentElement.setAttribute('data-theme', newTheme);
-            localStorage.setItem('theme', newTheme);
-          });
+          const updateIcon = () => {
+            themeIcon.className = currentTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+          };
+        
+          const toggleTheme = () => {
+            currentTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            document.body.setAttribute('data-theme', currentTheme);
+            localStorage.setItem('theme', currentTheme);
+            updateIcon();
+          };
+        
+          themeToggle.addEventListener('click', toggleTheme);
+        
+          // Set initial theme and icon
+          document.body.setAttribute('data-theme', currentTheme);
+          updateIcon();
+        });
         
         function navbarToggle() {
             var x = document.getElementsByClassName("navbar")[0];
