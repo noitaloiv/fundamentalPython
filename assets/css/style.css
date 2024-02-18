@@ -182,10 +182,6 @@ footer {
     background-color: #ddd; /* Light grey background on hover */
 }
 
-.highlight {
-    background-color: lightgray;
-}
-
 /* Responsive styling */
 @media screen and (max-width: 600px) {
     #navbar li {
