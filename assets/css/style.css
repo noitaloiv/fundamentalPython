@@ -19,6 +19,15 @@
   /* ... other dark theme colors */
 }
 
+body[data-theme='light'] pre {
+  color: black;
+  background-color:#eeffcc;
+}
+
+body[data-theme='dark'] pre {
+  background-color:#202020;
+}
+
 /* Light mode menu */
 body[data-theme='light'] .dropdown-content {
   background: #ffffff;
