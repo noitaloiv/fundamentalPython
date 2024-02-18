@@ -13,6 +13,16 @@
   /* ... other dark theme colors */
 }
 
+/* Light mode icon */
+body[data-theme='light'] #theme-icon {
+  content: "\f186"; /* FontAwesome moon icon */
+}
+
+/* Dark mode icon */
+body[data-theme='dark'] #theme-icon {
+  content: "\f185"; /* FontAwesome sun icon */
+}
+
 body {
     background-color: var(--background-color);
     color: var(--text-color);
@@ -33,6 +43,12 @@ body {
 pre {
   line-height: 1.5;
   padding: 20px;
+  background-color: #FFF; /* Darker background for dark mode */
+  color: #000;
+}
+
+button {
+  border:none;
 }
 
 span {
@@ -41,8 +57,8 @@ span {
 
 @media (prefers-color-scheme: dark) {
   pre {
-    background-color: #282a36; /* Darker background for dark mode */
-    color: #f8f8f2; /* Lighter text color for dark mode */
+    background-color: #000; /* Darker background for dark mode */
+    color: #FFF; /* Lighter text color for dark mode */
     /* Add other dark mode specific styling as needed */
   }
 }
