@@ -42,6 +42,7 @@ body[data-theme='dark'] .dropdown-content {
 /* Light mode icon */
 body[data-theme='light'] #theme-icon {
   content: "\f186"; /* FontAwesome moon icon */
+  color: white;
 }
 
 /* Dark mode icon */
@@ -100,13 +101,13 @@ pre {
   border-radius: 20px;
 }
 
-@media (prefers-color-scheme: dark) {
+/*@media (prefers-color-scheme: dark) {
   pre {
     background-color: #000; /* Darker background for dark mode */
     color: #FFF; /* Lighter text color for dark mode */
     /* Add other dark mode specific styling as needed */
   }
-}
+}*/
 
 header, main, footer {
     max-width: 1200px;
@@ -217,7 +218,7 @@ footer {
 /* Sidebar styles */
 #sidebar {
     width: 300px;
-    min-width: 15vw;
+    min-width: 10vw;
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
     margin: 20px;
