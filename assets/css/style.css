@@ -9,6 +9,7 @@
   /* Dark theme colors */
   --background-color: #121212;
   --text-color: #ffffff;
+  
   /* ... other dark theme colors */
 }
 
@@ -19,7 +20,7 @@ body {
     line-height: 1.5;
     margin: 0;
     padding: 0;
-    --font-stack: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji
+    --font-stack: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
     --font-stack--monospace: "SFMono-Regular",Menlo,Consolas,Monaco,Liberation Mono,Lucida Console,monospace;
     --font-size--normal: 100%;
     --font-size--small: 87.5%;
@@ -78,7 +79,6 @@ i {
 }
 
 main {
-    background-color: #fff;
     padding: 20px 40px; /* Increased right and left padding */
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -92,7 +92,6 @@ footer {
 
 /* Navbar base styles */
 #navbar {
-    background-color: #f8f8f8; /* Light grey background */
     border-bottom: 1px solid #e7e7e7; /* Bottom border for a slight shadow effect */
 }
 
@@ -109,7 +108,6 @@ footer {
 
 #navbar li a {
     display: block;
-    color: #333; /* Dark text color for contrast */
     text-align: center;
     padding: 14px 16px; /* Vertical and horizontal padding */
     text-decoration: none;
@@ -143,7 +141,6 @@ footer {
 /* Sidebar styles */
 #sidebar {
     width: 240px; /* Fixed sidebar width */
-    background-color: #f8f8f8; /* Light grey background */
     padding: 20px;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
     margin: 20px;
@@ -158,7 +155,6 @@ footer {
     display: block;
     padding: 10px;
     text-decoration: none;
-    color: #333; /* Dark text for contrast */
 }
 
 #sidebar nav ul li a:hover {
@@ -169,7 +165,6 @@ footer {
 main {
     flex-grow: 1; /* Take up remaining space */
     padding: 20px;
-    background-color: #fff; /* White background for the content */
 }
 
 /* Responsive sidebar */
@@ -189,7 +184,6 @@ main {
     align-items: center; /* Align icons and text vertically */
     padding: 10px;
     text-decoration: none;
-    color: #333;
 }
 
 #sidebar nav ul li a i {
@@ -224,7 +218,6 @@ img {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
