@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Week 1: Introduction to Python"
+---
+
 # "Påståenden" (statements)
 Ett påstående är en instruktion som vår kompilator kan utföra. Vi har redan sett exempel på tre sorters påståenden: `print()`, `type()` och tilldelning.
 
