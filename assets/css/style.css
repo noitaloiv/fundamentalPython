@@ -16,11 +16,10 @@
 body {
     background-color: var(--background-color);
     color: var(--text-color);
-    font: var(--font-stack);
+    font: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
     line-height: 1.5;
     margin: 0;
     padding: 0;
-    --font-stack: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
     --font-stack--monospace: "SFMono-Regular",Menlo,Consolas,Monaco,Liberation Mono,Lucida Console,monospace;
     --font-size--normal: 100%;
     --font-size--small: 87.5%;
@@ -32,6 +31,15 @@ body {
 
 pre {
   line-height: 1.5;
+  padding: 20px;
+}
+
+@media (prefers-color-scheme: dark) {
+  pre {
+    background-color: #282a36; /* Darker background for dark mode */
+    color: #f8f8f2; /* Lighter text color for dark mode */
+    /* Add other dark mode specific styling as needed */
+  }
 }
 
 header, main, footer {
